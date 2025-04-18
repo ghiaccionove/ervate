@@ -7,7 +7,19 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+soccerdata = { version = "^1.8.7", python = ">=3.10,<3.13" }
+requests = "^2.32.3"
+pandas = "^2.2.3"
+bs4 = "^0.0.2"
 
+
+[tool.poetry.group.dev.dependencies]
+isort = "^6.0.1"
+black = "^25.1.0"
+flake8 = "^7.2.0"
+
+[tool.isort]
+profile = "black"
 
 [build-system]
 requires = ["poetry-core"]
